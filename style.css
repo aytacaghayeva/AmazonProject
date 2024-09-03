@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input[type=text] {
+    border: 1px solid grey;
+    border-radius: 4px;
+    width: 400px;
+    height: 40px;
+}
+body{
+    background-image: linear-gradient(yellow,beige,orange);
+}
+.header a {
+    color: white;
+    text-decoration: none;
+}
+.header a:hover{
+   text-decoration: underline;
+}
+.city:hover{
+    text-decoration: underline;
+}
+.header {
+    border: 1px solid black;
+    color: white;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 15px;
+}
+
+.citymain {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.city .deliver{
+    font-size: 15px;
+    color: rgb(179, 179, 179);
+}
+.city {
+    display: flex;
+    flex-direction: column;
+}
+.city p, h1{
+    font-size: 15px;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+}
+.search{
+    width: auto;
+    cursor: pointer;
+}
+.searchmain {
+    display: flex;
+}
+
+.hello {
+    display: flex;
+    align-items: center;
+}
+
+.basket {
+    display: flex;
+    align-items: center;
+}
+
+.signhov{
+    padding-top: 10px;
+    position: absolute;
+    right: 100px;
+    top: 60px;
+    border: 1px solid black;
+    background-color: white;
+    width: 30%;
+    height: 40%;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+}
+.sign i {
+    padding-left:10px;
+    padding-top: 10px;
+    position: absolute;
+    right: 300px;
+    top: 15px;
+    cursor: pointer;
+    color: aliceblue;
+}
+.sign:hover .signhov{
+    display: block;
+ }
+ 
+.blue{
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.signhov p{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.yourlist{
+    padding-top: 10px;
+    cursor: pointer;
+}
+.youraccount{
+    padding-top: 10px;
+    cursor: pointer;
+}
+.orange{
+    cursor: pointer;
+    background-color: orange;
+    width: 40%;
+    height: 13%;
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding-block: 10px;
+}
+.your{
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-around;
+  
+}
+
+/* bura qeder ilk header idi */
+
+.secondheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 3%;
+    padding-bottom: 1%;
+    padding-top:1% ;
+    border: 1px solid black;
+    background-color: rgb(6, 45, 86);
+    color: white;
+    
+}
+
+.secondheader a {
+    text-decoration: none;
+    color: white;
+}
+.today , .registry{
+    margin-inline: 5%;
+}
+h4{
+    margin-left: 2%;
+}
+.list{
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.general {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.pcs{
+    width: 200%;
+}
+.section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    margin-top: 0;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.item img {
+    max-width: 100%;
+   
+}
+
+.general a {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.general a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.books{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bestsellers{
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 5px;
+    padding-left: 80px;
+    border: 1px solid black;
+    background-color: white;
+    width: 90%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    row-gap: 45px;
+    column-gap: 30px;
+    grid-template-areas:" a b c d e l"
+    "f g h j k z"
+}
+.bestsellers h1{
+    font-size: 20px;
+    color: blue;
+    padding-bottom: 5px;
+}
+.bestsellers h1:hover{
+    text-decoration: underline;
+    color: red;
+}
+.bestsellers img:hover{
+    position: relative;
+    bottom: 5px;
+    
+}
+.bestsellers img{
+    width: 200px;
+}
+.four img{
+    width: 250px;
+}
+.four{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 43%;
+    width: auto;
+    padding: 16px;
+    color: black;
+    font-size: 30px;
+    border: 1px solid gray;
+    
+}
+.next {
+    right: 10px;
+}
+.prev{
+    left: 10px;
+}
+.prev, .next:hover{
+    border: 1px solid red;
+}
+.toy{
+    width: 300px; 
+    height: 250px;
+}
+
+.toys{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+    width: 90%;
+    height: 400px;
+    margin-bottom: 15px;
+    padding-bottom: 30px;
+    padding-inline: 10px;
+    background-color: lightgoldenrodyellow;
+    margin-left: 5%;
+}
+.star{
+    width: 10px;
+    height: 10px;
+}
+.dino{
+    text-align: center;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    background-color: white;
+}
+.price{
+    color: blue;
+}
+.price:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: red;
+}
+.more{
+    color: #0073e6;
+    cursor: pointer;
+    text-decoration: underline;
+    display: block;
+}
+.more h1{
+    font-size: 20px;
+}
+.more h1:hover{
+    color: red;
+    text-decoration: red underline;
+}
+
+.firstfoot{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding-block: 10px;
+    background-color: white;
+    font-size: 20px;
+}
+.firstfoot button{
+    margin-block: 10px;
+    width: 20%;
+}
+
+.dark{
+    width: 100%;
+    background-color: #0e2036;
+    padding-block:30px ;
+}
+
+
+.secondf{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #232F3E;
+    border: 1px solid black;
+    padding-top: 20px;
+}
+.secondfoot{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+.secondfoot h1{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.secondfoot a{
+    padding-block:10px ;
+}
+.secondfoot a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.amaz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.amaz .flag{
+    width: 20px;
+    height: 10px;
+}
+.currency{
+    padding-block: 10px;
+    padding-inline: 10px;
+    border: 1px solid gray;
+}
+.country{
+    border: 1px solid gray;
+    margin-right: 15px;
+   padding-block: 10px;
+   padding-inline: 10px;
+}
+
+.azerb{
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    padding-block: 10px;
+   padding-inline: 10px;
+}
+.amaz .amazonIcon{
+    margin-right: 50px;
+}
+.amaz a{
+    text-decoration: none;
+    color: white;
+}
+.makemoney{
+    display: flex;
+    flex-direction: column;
+}
+.payment{
+    display: flex;
+    flex-direction: column;
+}
+.helpyou{
+    display: flex;
+    flex-direction: column;
+}
+.gettoknow{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+.book1{
+    grid-area: a;
+   
+}
+
+.book2{
+    grid-area: b;
+  
+}
+.book3{
+    grid-area: c;
+   
+    
+}
+.book4{
+    grid-area: d;
+  
+  
+}
+.book5{
+    grid-area: e;
+ 
+}
+.book6{
+    grid-area: f;
+ 
+}
+.book7{
+    grid-area: g;
+  
+}
+.book8{
+    grid-area: h;
+  
+}
+.book9{
+    grid-area: j;
+  
+}
+.book10{
+    grid-area: k;
+
+}
+.book11{
+    grid-area: l;
+   
+}
+
+.book12{
+    grid-area: z;
+    
+}
+
+
+
+
+
+
+
+
+
+.amazonIcon {
+    width: 6%;
+}
+
+.search-button {
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    cursor: pointer;
+}
+
+.flag {
+    width: 35%;
+    height: 20px;
+    padding-right: 5px;
+}
+input{
+    padding-left: 10px;
+}
